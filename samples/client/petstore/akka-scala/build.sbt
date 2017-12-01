@@ -6,6 +6,9 @@ organization  := "io.swagger"
 
 scalaVersion  := "2.11.8"
 
+crossPaths := false
+autoScalaLibrary := false
+
 libraryDependencies ++= Seq(
   "io.swagger" % "swagger-core" % "1.5.15",
   "com.typesafe" % "config" % "1.2.1",
@@ -29,4 +32,3 @@ scalacOptions := Seq(
 )
 
 publishArtifact in (Compile, packageDoc) := false
-
